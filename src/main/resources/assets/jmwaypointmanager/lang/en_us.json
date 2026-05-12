@@ -1,0 +1,11 @@
+{
+  "key.categories.jmwaypointmanager": "JM Waypoint Manager",
+  "key.jmwaypointmanager.open_manager": "Open Waypoint Manager",
+  "jmwaypointmanager.screen.title": "Waypoints",
+  "jmwaypointmanager.screen.search": "search",
+  "jmwaypointmanager.screen.search.hint": "Search waypoints…",
+  "jmwaypointmanager.screen.delete_selected": "Delete",
+  "jmwaypointmanager.screen.toggle_enabled": "Toggle Enabled",
+  "jmwaypointmanager.screen.select_all": "Select All",
+  "jmwaypointmanager.screen.clear_selection": "Clear"
+}

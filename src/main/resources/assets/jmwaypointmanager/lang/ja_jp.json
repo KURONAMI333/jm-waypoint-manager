@@ -1,0 +1,11 @@
+{
+  "key.categories.jmwaypointmanager": "JM Waypoint Manager",
+  "key.jmwaypointmanager.open_manager": "ウェイポイント管理を開く",
+  "jmwaypointmanager.screen.title": "ウェイポイント一覧",
+  "jmwaypointmanager.screen.search": "検索",
+  "jmwaypointmanager.screen.search.hint": "ウェイポイントを検索…",
+  "jmwaypointmanager.screen.delete_selected": "削除",
+  "jmwaypointmanager.screen.toggle_enabled": "有効/無効切替",
+  "jmwaypointmanager.screen.select_all": "全選択",
+  "jmwaypointmanager.screen.clear_selection": "選択解除"
+}

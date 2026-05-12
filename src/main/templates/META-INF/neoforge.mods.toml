@@ -1,0 +1,49 @@
+# JM Waypoint Manager: a modern UI replacement for JourneyMap's waypoint list.
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="KURONAMI"
+displayURL="https://github.com/KURONAMI333/jm-waypoint-manager"
+issueTrackerURL="https://github.com/KURONAMI333/jm-waypoint-manager/issues"
+description='''
+JM Waypoint Manager — a modern UI on top of JourneyMap's waypoint list.
+Search by name, filter by dimension / color / enabled state, sort by name or distance, and bulk-operate on multiple waypoints at once.
+'''
+
+# ─────────────────────────────────────────────────
+# Dependencies
+# ─────────────────────────────────────────────────
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.1,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+# JourneyMap: required - without it this mod has nothing to manage.
+# CLIENT side only since JM is client-only.
+#
+# NOTE: JM's version string is shaped like "1.21.1-6.0.0-beta.65" — the
+# Maven comparator picks up "1.21.1" first, so a tight versionRange like
+# "[6.0,)" never matches. Leave it open and rely on the v2 API import +
+# JmPlugin's null-check to fail closed if JM is somehow incompatible. Same
+# workaround as Compass to Map (mod-003).
+[[dependencies.${mod_id}]]
+    modId="journeymap"
+    type="required"
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="CLIENT"
