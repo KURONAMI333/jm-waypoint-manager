@@ -20,7 +20,7 @@ CF_JAVA_17 = 8326
 CF_JAVA_21 = 11135
 
 REPO = Path(__file__).resolve().parent.parent
-TOKEN_PATH = Path(r"C:\Users\naoki\claude-memory\kuronami-mods\tools\.tokens\.cf_token")
+TOKEN_PATH = Path(str(Path.home() / "dev/projects/minecraft-mod-dev/kuronami-mods/tools/.tokens" / ".cf_token"))
 
 # (filename, mc, loader, java)
 JARS = [

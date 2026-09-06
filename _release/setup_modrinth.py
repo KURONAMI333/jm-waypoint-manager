@@ -11,12 +11,12 @@ from pathlib import Path
 import requests
 
 API = "https://api.modrinth.com/v2"
-SLUG = "jm-waypoint-manager"
+SLUG = "waypoint-manager"
 VERSION = "0.1.0"
 
 REPO = Path(__file__).resolve().parent.parent
 TOKEN_PATH = Path(
-    r"C:\Users\naoki\claude-memory\kuronami-mods\tools\.tokens\.modrinth_token"
+    str(Path.home() / "dev/projects/minecraft-mod-dev/kuronami-mods/tools/.tokens" / ".modrinth_token")
 )
 ICON_PATH = REPO / "logo.png"
 
@@ -29,15 +29,15 @@ JARS = [
 ]
 
 BODY = """\
-# JM Waypoint Manager
+# Waypoint Manager
 
 A modern UI on top of JourneyMap's waypoint list — search, filter, bulk operations.
 
 ## What it does
 
 JourneyMap is great, but its built-in waypoint list is minimal — no search,
-limited sorting, no bulk operations. JM Waypoint Manager adds a screen
-that lets you actually **manage** a large waypoint collection.
+limited sorting, no bulk operations. This mod adds a screen that lets
+you actually **manage** a large waypoint collection.
 
 ## Features
 
@@ -79,7 +79,7 @@ Default keybind: **Y** (rebindable in Controls). Avoids `J` / `M` / `B`
 
 PROJECT_PATCH = {
     "body": BODY,
-    "license_id": "MIT",
+    "license_id": "LicenseRef-All-Rights-Reserved",
     "source_url": "https://github.com/KURONAMI333/jm-waypoint-manager",
     "issues_url": "https://github.com/KURONAMI333/jm-waypoint-manager/issues",
     "categories": ["utility"],
